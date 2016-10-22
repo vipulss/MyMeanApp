@@ -1,6 +1,6 @@
 var express = require('express');
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/pathDB');
+mongoose.connect('mongodb://vipulss:@vipulss.documents.azure.com:10250/?ssl=true/pathDB');
 
 db = mongoose.connection;
     db.on("error", console.error.bind(console, "connection error:"));
