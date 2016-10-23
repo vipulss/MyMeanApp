@@ -22,7 +22,13 @@ router.use(function(req,res,next) {
 
 router.get('/getAll', function(req,res,next) {
 
-    
+    var paymentdata = {name:"Vipul", description:  new Date().toISOString()};
+	
+	var paymentmodesdata = new paymentMode(paymentdata);
+
+	paymentmodesdata.save( function(error, data){
+    });
+	
     paymentMode.find({},function(err,docs){
         res.json(docs);
         res.end();
