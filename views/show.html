@@ -16,7 +16,7 @@
 <script>
 var app = angular.module('myApp', []);
 app.controller('paymentCtrl', function($scope, $http) {
-  $http.get("http://vipulshahwebapp.azurewebsites.net/payment/getAll")
+  $http.get("https://vipulssmeanapp.mybluemix.net/payment/getAll")
   .then(function (response) {$scope.paymentOptions = response.data;});
 });
 </script>

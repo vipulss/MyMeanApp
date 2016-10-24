@@ -1,6 +1,6 @@
 var express = require('express');
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://vipulss:i1gwiwEWpHs6iBRvLvotFr0jsQ61WVaBjjUJffSq78PcmR0KRi0kP1KXwDGzJLxuCWY2Va0gk5kK7GOqp9V9aw==@vipulss.documents.azure.com:10250/pathDB?ssl=true');
+mongoose.connect('mongodb://admin:IRUPUEPSCWXOJJRB@sl-us-dal-9-portal.0.dblayer.com:16164/admin?ssl=true');
 
 db = mongoose.connection;
     db.on("error", console.error.bind(console, "connection error:"));
